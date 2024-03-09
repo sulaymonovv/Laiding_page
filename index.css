@@ -17,6 +17,7 @@ nav {
 }
 
 .list_group {
+    margin: 0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -28,11 +29,18 @@ nav {
     font-weight: 500;
     color: #263238;
     cursor: pointer;
+    transition: .5s;
 }
 
-.col-3 {}
+.list_item:hover {
+    border-bottom: 1px solid #263238;
+    transition: .5s;
+}
 
-.btn_box {}
+.btn_box {
+    display: flex;
+    justify-content: end;
+}
 
 .btn_right {
     font-size: 24px;
@@ -43,6 +51,67 @@ nav {
     border-radius: 5px;
 }
 
-@media(max-width:576px ){
+/* --------------------------- */
 
+.text_header {
+    font-size: 50px;
+    font-weight: 600;
+    color: #000;
+    padding-bottom: 20px;
+    padding-top: 114px;
+}
+
+.paragraf {
+    font-size: 18px;
+    font-weight: 400;
+    color: #8F95A5;
+}
+
+.header_btn {
+    padding: 17px 67px;
+    font-size: 26px;
+    font-weight: 400;
+    color: #fff;
+    background: #263238;
+    border: none;
+    border-radius: 10px;
+}
+
+.girl-photo {
+    width: 100%;
+}
+
+/* RESPONSIVE WEBSITE */
+
+@media(max-width: 576px) {
+    .text_box {
+        text-align: end;
+    }
+
+    .girl_box {
+        text-align: center;
+    }
+
+    .sm-girl-img {
+        width: 100%;
+    }
+
+    .text_header {
+        font-size: 24px;
+        text-align: center;
+        padding-top: 16px;
+    }
+
+    .paragraf {
+        font-size: 14px;
+        text-align: center;
+    } 
+
+    .header_btn {
+        padding: 18px 77px;
+    }
+
+    .div_box {
+        text-align: center;
+    }
 }
